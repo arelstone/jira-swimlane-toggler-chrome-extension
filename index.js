@@ -8,8 +8,8 @@ if (/^https:\/\/(.*)?\.atlassian\.net\/secure\/RapidBoard.jspa\?rapidView/gmi.te
         $('.ghx-swimlane').not('.ghx-closed').each((_, elem) => $(elem).addClass('ghx-closed'));
         $('.ghx-swimlane').last().addClass('ghx-last')
         $('.ghx-swimlane.ghx-first').removeClass('ghx-closed');
-
-        $('body').keydown(({ keyCode, preventDefault }) => {
+	
+        $("body, div#content, div#ghx-pool").keydown(({ keyCode, preventDefault }) => {
             preventDefault();
 
             const current = $('.ghx-swimlane:not(.ghx-closed)');
