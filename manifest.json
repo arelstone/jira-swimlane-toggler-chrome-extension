@@ -21,7 +21,6 @@
         "<all_urls>"
       ],
       "js": [
-        "jquery.min.js",
         "index.js"
       ]
     }
